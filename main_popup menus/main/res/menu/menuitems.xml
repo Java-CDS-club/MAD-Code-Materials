@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="search"
+        android:visible="true"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/call"
+        android:title="Contact"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/message"
+        android:icon="@drawable/message"
+        android:title="message"
+        android:visible="true"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/mycontacts"
+                android:icon="@drawable/call"
+                android:title="mycontacts"
+                android:visible="true"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/mymessages"
+                android:icon="@drawable/message"
+                android:title="mymessages"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+
+
+</menu>

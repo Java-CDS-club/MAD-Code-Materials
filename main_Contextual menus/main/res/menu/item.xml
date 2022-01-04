@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/About"
+        android:title="about"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/search"
+        android:title="search"
+        android:icon="@drawable/ic_launcher_foreground"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/share"
+        android:title="share"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/contacts"
+        android:title="contacts"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/status"
+        android:title="status"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item android:id="@+id/mycontact"
+                android:title="myContacts"
+                app:showAsAction="ifRoom">
+            </item>
+            <item android:id="@+id/mystatus"
+                android:title="mystatus"
+                app:showAsAction="ifRoom"></item>
+        </menu>
+
+    </item>
+
+</menu>
